@@ -9,7 +9,11 @@ ul#menu li {
 }
 
 body {
-  background-image: url('../img/bgd01.gif');
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url('../img/anim_city.gif');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
