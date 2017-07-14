@@ -8,6 +8,17 @@ ul#menu li {
     margin-left: 1%;
 }
 
+body {
+  background-image: url('../img/bgd01.gif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 video#bgvid { 
     position: fixed;
     top: 50%;
@@ -21,6 +32,5 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(nebula.jpg) no-repeat;
     background-size: cover; 
 }
