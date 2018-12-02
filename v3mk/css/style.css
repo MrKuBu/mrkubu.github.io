@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, span {
+	padding-bottom: 0.714em !important;
+	padding-top: 0.714em !important;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+
+body {
+	background: #ffffff;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	background:  url(https://raw.githubusercontent.com/MrKuBu/mrkubu.github.io/master/file/img/anim_city.gif) no-repeat center center fixed; 
+	background-size: cover;
+}
+
+.noselect {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+}
+
+.button {
+	width: 400px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	justify-content: space-evenly;
+	text-align: center;
+	font-weight: bold;
+	overflow: hidden;
+	color: #ffffff;
+}
+.button .links a {
+	padding: 15px;
+	transition: 700ms cubic-bezier(0.89, 0.03, 0.06, 1.5);
+	color: #ffffff;
+	text-align: center;
+	opacity: 0;
+	text-decoration: none;
+	-webkit-transform: scale(0);
+          transform: scale(0);
+}
+.button .links a:hover {
+	color: #1ec81e;
+	transition-timing-function: ease-in-out !important;
+	transition-delay: 1ms !important;
+}
+.button .links a:nth-child(5) {
+	transition-delay: 55ms;
+}
+.button .links a:nth-child(4) {
+	transition-delay: 110ms;
+}
+.button .links a:nth-child(3) {
+	transition-delay: 165ms;
+}
+.button .links a:nth-child(2) {
+	transition-delay: 220ms;
+}
+.button .links a:nth-child(1) {
+	transition-delay: 275ms;
+}
+.button .overlay {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 400px;
+	height: 80px;
+	position: absolute;
+	top: 0em;
+	left: 0em;
+	background-image: linear-gradient(to right, #b64c4c 0%, #4755a7 100%);
+	transition: 1s cubic-bezier(0.89, 0.03, 0.06, 1.5);
+}
+.button .overlay a {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  opacity: 1;
+  padding: 0;
+  margin: auto;
+  color: #ffffff !important;
+  font-size: 20px;
+}
+
+.button:hover .links a {
+	-webkit-transform: scale(1);
+		transform: scale(1);
+	opacity: 1;
+}
+.button:hover .overlay {
+	-webkit-transform: translateX(-500px);
+		transform: translateX(-500px);
+}
+
+@-webkit-keyframes beat {
+	to {
+		-webkit-transform: scale(1.4);
+			transform: scale(1.4);
+	}
+}
+
+@keyframes beat {
+	to {
+		-webkit-transform: scale(1.4);
+			transform: scale(1.4);
+	}
+}
