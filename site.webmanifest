@@ -1,8 +1,6 @@
 {
     "name": "Official website MrKuBu!",
     "short_name": "MrKuBu",
-    "start_url": "https://mrkubu.github.io",
-    "display": "standalone",
     "icons": [
         {
             "src": "/android-chrome-36x36.png",
@@ -41,6 +39,9 @@
             "purpose": "any maskable"
         }
     ],
+    "start_url": "https://mrkubu.github.io",
+    "display": "standalone",
+    "prefer_related_applications": true,
     "theme_color": "#ffffff",
     "background_color": "#ffffff"
 }
