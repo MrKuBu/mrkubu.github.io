@@ -39,7 +39,8 @@
             "purpose": "any maskable"
         }
     ],
-    "start_url": "https://mrkubu.github.io",
+    "start_url": "/",
+    "scope": "/",
     "display": "standalone",
     "prefer_related_applications": true,
     "theme_color": "#ffffff",
