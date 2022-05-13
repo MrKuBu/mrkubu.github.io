@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans');
+
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -19,7 +21,7 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 
 body {
 	background: #ffffff;
-	font-family: "Raleway", sans-serif;
+	font-family: "Fira Sans", sans-serif;
 	text-align: center;
 	background:  url(https://raw.githubusercontent.com/MrKuBu/mrkubu.github.io/master/file/img/anim_city.gif) no-repeat center center fixed; 
 	background-size: cover;
@@ -33,7 +35,7 @@ body {
 }
 
 .button {
-	width: 400px;
+	width: 405px;
 	height: 80px;
 	display: flex;
 	align-items: center;
