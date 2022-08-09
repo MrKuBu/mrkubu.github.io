@@ -1,7 +1,10 @@
-Portfolio Website
+#Portfolio Website
 
-http://mrkubu.github.io
+## http://mrkubu.github.io
 
 
-Test performance
-![MrKuBu_WebsitePerfromance](performance.png)
+### Test performance
+### [GitHUB]
+![MrKuBu_WebsitePerfromance_github](performance_git.png)
+### [Localhost]
+![MrKuBu_WebsitePerfromance_localhost](performance.png)
