@@ -5,6 +5,6 @@
 
 ### Test performance
 ### [GitHUB]
-![MrKuBu_WebsitePerfromance_github](performance_git.png)
+![MrKuBu_WebsitePerfromance_github](performance_github.png)
 ### [Localhost]
 ![MrKuBu_WebsitePerfromance_localhost](performance.png)
