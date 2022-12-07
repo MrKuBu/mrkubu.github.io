@@ -1,6 +1,7 @@
 // Copyright 2022 Awesomium team LLC (MrKuBu). All Rights Reserved.
 
-import * as PIXI from "https://cdn.skypack.dev/pixi.js";
+//import * as PIXI from "https://cdn.skypack.dev/pixi.js";
+import * as PIXI from "https://pixijs.download/release/pixi.min.js";
 import { KawaseBlurFilter } from "https://cdn.skypack.dev/@pixi/filter-kawase-blur";
 import SimplexNoise from "https://cdn.skypack.dev/simplex-noise@3.0.0";
 import hsl from "https://cdn.skypack.dev/hsl-to-hex";
