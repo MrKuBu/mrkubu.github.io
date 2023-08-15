@@ -1,7 +1,7 @@
-// Copyright 2022 Awesomium team LLC (MrKuBu). All Rights Reserved.
+// Copyright 2023 Awesomium team LLC (MrKuBu). All Rights Reserved.
 
-const staticCacheName = 'static-awt-cache-v1';
-const dynamicCacheName = 'dynamic-awt-cache-v1';
+const staticCacheName = 'static-awt-cache-v2';
+const dynamicCacheName = 'dynamic-awt-cache-v2';
 
 const staticAssets = [
     './',
@@ -10,10 +10,26 @@ const staticAssets = [
     './files/fonts/MrKuBu.svg',
     './files/fonts/MrKuBu.ttf',
     './files/fonts/MrKuBu.woff',
+    './files/fonts/fa-brands-400.eot',
+    './files/fonts/fa-brands-400.svg',
+    './files/fonts/fa-brands-400.ttf',
+    './files/fonts/fa-brands-400.woff',
+    './files/fonts/fa-regular-400.eot',
+    './files/fonts/fa-regular-400.svg',
+    './files/fonts/fa-regular-400.ttf',
+    './files/fonts/fa-regular-400.woff',
+    './files/fonts/fa-solid-900.eot',
+    './files/fonts/fa-solid-900.svg',
+    './files/fonts/fa-solid-900.ttf',
+    './files/fonts/fa-solid-900.woff',
     './files/Icons/android-chrome-144x144.png',
     './files/Icons/android-chrome-192x192.png',
-    './files/css/style.css',
-    './files/js/mrkubu_app.js'
+    './files/css/styles.css',
+    './files/css/font-awesome.css',
+    './files/js/mrkubu_app.js',
+    './files/js/pixi.js',
+    './files/js/script.js',
+    './files/img/mrkubu.webp'
 ];
 
 self.addEventListener('install', async event => {
