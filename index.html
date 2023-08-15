@@ -1,0 +1,519 @@
+<!-- Copyright 2023 Awesomium team LLC (MrKuBu). All Rights Reserved.-->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Official website MrKuBu!</title>
+      <meta name="application-name" content="Official website MrKuBu!"/>
+      <meta name="description" content="This official website developer MrKuBu!">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <link rel="apple-touch-icon" sizes="180x180" href="/files/Icons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/files/Icons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="194x194" href="/files/Icons/favicon-194x194.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="/files/Icons/android-chrome-192x192.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/files/Icons/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="mask-icon" href="/files/Icons/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#603cba">
+      <meta name="msapplication-TileImage" content="/files/Icons/mstile-144x144.png">
+      <meta name="theme-color" content="#3c4fc8">
+
+      <link rel="stylesheet" href="/files/css/font-awesome.css">
+      <link rel="stylesheet" href="/files/css/styles.css">
+   </head>
+
+   <!-- Loader -->
+   <div class="page-loader" id="loading">
+      <div class="loader"></div>
+   </div>
+
+   <script>
+      function random(min, max) {
+      return Math.random() * (max - min) + min;
+      }
+      document.body.style.background = "linear-gradient("+random(0, 360)+"deg, rgba("+random(30, 220)+","+random(30, 220)+","+random(30, 220)+",1) 0%, rgba("+random(30, 220)+","+random(30, 220)+","+random(30, 220)+",1) 48%, rgba("+random(30, 220)+","+random(30, 220)+","+random(30, 220)+",1) 100%)";
+
+      document.getElementById('loading').style.background = "linear-gradient("+random(0, 360)+"deg, rgba("+random(0, 200)+","+random(0, 200)+","+random(0, 200)+",1) 0%, rgba("+random(0, 200)+","+random(0, 200)+","+random(0, 200)+",1) 48%, rgba("+random(0, 200)+","+random(0, 200)+","+random(0, 200)+",1) 100%)";
+   </script>
+   <!-- Loader end -->
+
+   <body oncontextmenu="return false">
+      <canvas class="orb-canvas" width="1438" height="979" style="touch-action: none; cursor: inherit;"></canvas>
+      <!-- Main Start -->
+      <div class="main hidden">
+          <!-- Header Start -->
+          <header class="header">
+            <div class="container">
+               <div class="row flex-end centeritem">
+                  <a href="https://discord.com/invite/PfczF2e" class="nav-item link-item spacetext btn link-item">Discord</a>
+                  <a href="https://www.unrealengine.com/marketplace/en-US/profile/Awesomium+Team+LLC" class="nav-item link-item spacetext btn link-item">Unreal engine</a>
+                  <a href="https://github.com/mrkubu" class="nav-item link-item spacetext btn link-item">Github</a>
+                  <a href="https://awesomium-team.github.io/" class="nav-item link-item spacetext btn link-item">Awesomium Team LLC</a>
+                  <a href="https://store.steampowered.com/curator/36905281" class="nav-item link-item spacetext btn link-item">Steam</a>
+               </div>
+            </div>
+         </header>
+         <!-- Header End -->
+         <section class="home-section align-items-center" id="home">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="home-text">
+                     <p>Hello
+                        <img src="https://camo.githubusercontent.com/5967cb0eea071d8dd9b44a543bd2d028143bb4ab953c24d304e902534b584400/68747470733a2f2f692e696d6775722e636f6d2f514b4d734e444e2e676966" data-canonical-src="https://i.imgur.com/QKMsNDN.gif" data-target="animated-image.originalImage" class="hi_anim" alt="(handwave)">,
+                         I'm</p>
+                     <h1>MrKuBu</h1>
+                     <h2>Game developer and 3D modeller</h2>
+                     <p>Using software </p>
+                     <!--<h2>   Unreal engine, Blender, Substance painter, Visual studio</h2>-->
+                     <div class="row centeritem">
+                        <div class="portfolio-item-thumbnail software_blocks tooltip" style="margin: 15px 5px 15px 15px !important;">
+                           <span class="tooltiptext">Unreal engine</span>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Cib-unreal-engine_%28CoreUI_Icons_v1.0.0%29.svg/120px-Cib-unreal-engine_%28CoreUI_Icons_v1.0.0%29.svg.png" alt="Unreal engine" style="filter: brightness(0) invert(1);">
+                        </div>
+
+                        <div class="portfolio-item-thumbnail software_blocks tooltip">
+                           <span class="tooltiptext">Visual studio 2019</span>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/640px-Visual_Studio_Icon_2022.svg.png" alt="Visual studio">
+                        </div>
+
+                        <div class="portfolio-item-thumbnail software_blocks tooltip">
+                           <span class="tooltiptext">Visual code</span>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/640px-Visual_Studio_Code_1.35_icon.svg.png" alt="Visual code">
+                        </div>
+
+                        <div class="portfolio-item-thumbnail software_blocks tooltip">
+                           <span class="tooltiptext">Blender</span>
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/120px-Blender_logo_no_text.svg.png" alt="Blender">
+                        </div>
+
+                        <div class="portfolio-item-thumbnail software_blocks tooltip">
+                           <span class="tooltiptext">Photoshop</span>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/640px-Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop">
+                        </div>
+
+                        <div class="portfolio-item-thumbnail software_blocks tooltip">
+                           <span class="tooltiptext">Substance painter</span>
+                           <img src="https://www.adobe.com/content/dam/cc/icons/pt_appicon_256.svg" alt="Substance painter">
+                        </div>
+
+                        <div class="portfolio-item-thumbnail software_blocks tooltip">
+                           <span class="tooltiptext">Zbrush 2023.0.1</span>
+                           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/ZBrush_Icon.png/640px-ZBrush_Icon.png" alt="Zbrush">
+                        </div>
+
+                     </div>
+
+                     <p>Contact me</p>
+                        <h2>   Mail: MrKuBu122333@gmail.com<br>
+                           Telegram: @MrKuBu</h2>
+
+                        <p>Follow Me</p>
+                        <div class="contact-info-item">
+                           <div class="social-links" style="font-size: 26px;">
+                              <a href="https://mrkubu.github.io/" target="_blank" style="font-family: MrKuBu;" >🔨</a>
+                              <a href="https://steamcommunity.com/id/mrkubu" target="_blank" style="font-family: MrKuBu;" >🎮</a>
+                              <a href="https://www.youtube.com/c/mrkubu" target="_blank" style="font-family: MrKuBu;" >🎥</a>
+                              <a href="https://www.unrealengine.com/marketplace/en-US/profile/Awesomium+Team+LLC" target="_blank" style="font-family: MrKuBu;" >🎨</a>
+                              <a href="https://discord.com/invite/PfczF2e" target="_blank" style="font-family: MrKuBu;" >🗣</a>
+                              <a href="https://store.steampowered.com/curator/36905281" target="_blank" style="font-family: MrKuBu;" >💻</a>
+                              <a href="https://t.me/awteamllc" target="_blank" style="font-family: MrKuBu;" >🖉</a>
+                              <a href="https://www.artstation.com/mrkubu" class="_blank"><i class="fab fa-artstation"></i></a>
+                           </div>
+                        </div>
+                     <a href="mailto:mrkubu122333@gmail.com" class="btn link-item">Hire me</a>
+                     <a href="https://www.unrealengine.com/marketplace/en-US/profile/Awesomium+Team+LLC" class="btn">Products/Unreal engine marketplace</a>
+                  </div>
+                  <div class="home-img">
+                     <div class="img-box overlay_name_btn overlay__btn--colors">
+                        <img src="files/img/mrkubu.webp" alt="profile-img">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="container">
+                  <div class="row">
+                     <div class="section-title">
+                        <h2>My works</h2>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/Simplynotification_featured-894x488-36df3dbb4e87ddbb8b2937bb1485ce98.png" width="293" height="160" alt="Simply notification">
+                        </div>
+                        <h3 class="portfolio-item-title">Simply notifications</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>🔔 Simply notifications - This notification system. Small notification and UI notifications.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>5.99$</span></li>
+                                 <li>Created/updated: <span>7/27/2023</span></li>
+                                 <li>Category: <span>Blueprints</span></li>
+                                 <li>Version: <span>1.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/8deaa48e1d724e2c9bfafd85d9d5958d" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/EmmacharacterBeachoutfitsBeachdressbikini_featured-894x488-b0262ca1d56b2df72c146ec7c5fda49a.png" width="293" height="160" alt="Emma Character - Beach Outfits (Beach, Dress, Bikini)">
+                        </div>
+                        <h3 class="portfolio-item-title">Emma Character - Beach Outfits (Beach, Dress, Bikini)</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>👩 Emma - 3D model of cute Girl with beach outfits (Beach, dress, bikini).</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>29.99$</span></li>
+                                 <li>Created/updated: <span>7/24/2023</span></li>
+                                 <li>Category: <span>Character</span></li>
+                                 <li>Version: <span>1.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/6c980559ceee42dca9742d9a50a8b233" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/SimplyBoombox_featured-894x488-1a7d3772f4bc268c9de42daaf95f0d53.png" width="293" height="160" alt="SimplyBoombox">
+                        </div>
+                        <h3 class="portfolio-item-title">SimplyBoombox</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>📻 SimplyBoombox - Play your custom tracks or radio.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>4.99$</span></li>
+                                 <li>Created/updated: <span>6/12/2023</span></li>
+                                 <li>Category: <span>Blueprints</span></li>
+                                 <li>Version: <span>1.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/6b44d0adfc2f459aba5e6373d47d28e1" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/OliviaandAxelOfficeoutfit_featured-894x488-6df2c547ec280eef4fa08c1e3bdfea48.png" width="293" height="160" alt="Olivia and Axel - Office outfit">
+                        </div>
+                        <h3 class="portfolio-item-title">Olivia and Axel - Office outfit</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>👥 Olivia and Axel - Office outfit. This stylized modular characters.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>29.99$</span></li>
+                                 <li>Created/updated: <span>6/01/2023</span></li>
+                                 <li>Category: <span>Characters</span></li>
+                                 <li>Version: <span>1.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/c126e2c77dc54b5fb5157263e74b4354" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/SimplyShop_featured-894x488-94c5571775aa601022561d20accf9533.png" width="293" height="160" alt="Simply Shop">
+                        </div>
+                        <h3 class="portfolio-item-title">Simply Shop</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>🛒 Simply Shop - this is a character shop system. Here you can make a store of things in an online game or a choice of clothes for a character or customization character.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>7.99$</span></li>
+                                 <li>Created/updated: <span>2/09/2023</span></li>
+                                 <li>Category: <span>Blueprints</span></li>
+                                 <li>Version: <span>1.1.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/932ec69d20b047beb103eb3f492810a1" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/Nelma_featured-894x488-c57dd0ea52902158f7553207211a9e3c.png" width="293" height="160" alt="Nelma">
+                        </div>
+                        <h3 class="portfolio-item-title">Nelma</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>👩 Nelma character - 3D model of cute Girl with modular cloth.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>29.99$</span></li>
+                                 <li>Created/updated: <span>1/30/2023</span></li>
+                                 <li>Category: <span>Characters</span></li>
+                                 <li>Version: <span>1.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/a4d9f0430141479f85e43ca80fcbf77f" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/ProgressiveUIScreenTransitions_featured-894x488-07355d36db0de188c81a7770ad0846b4.png" width="293" height="160" alt="ProgressiveUI Screen Transitions">
+                        </div>
+                        <h3 class="portfolio-item-title">ProgressiveUI Screen Transitions</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>This system is designed for beautiful transitions during the game or during the menu or during loading.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>8.99$</span></li>
+                                 <li>Created/updated: <span>10/11/2022</span></li>
+                                 <li>Category: <span>Blueprints</span></li>
+                                 <li>Version: <span>1.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/3ddbd262e24144838e7b1f55c7b935a8" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/ProgressiveUISciFi_featured-894x488-3b15e866b47d710f4a44c460cb35393f.png" width="293" height="160" alt="ProgressiveUI Sci-Fi">
+                        </div>
+                        <h3 class="portfolio-item-title">ProgressiveUI Sci-Fi</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>This simple Sci-Fi user interface is easy and flexible and you can easily create a new widget|menu|user interface. The main advantage is Animations.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>9.99$</span></li>
+                                 <li>Created/updated: <span>8/14/2022</span></li>
+                                 <li>Category: <span>Blueprints</span></li>
+                                 <li>Version: <span>1.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/babc2416e2cc461ebaca5b3565d8a7bf" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/Simplychat_featured-894x488-f0de8824f17bdfa58df57a39c1905c4a.png" width="293" height="160" alt="Simply chat">
+                        </div>
+                        <h3 class="portfolio-item-title">Simply chat</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>Simply Chat - very simple addition to your project.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>4.99$</span></li>
+                                 <li>Created/updated: <span>8/01/2022</span></li>
+                                 <li>Category: <span>Blueprints</span></li>
+                                 <li>Version: <span>1.1.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/slug/77e5efa3623a433488817b0afaca036a" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/SOverlay_featured-894x488-9c2249e6a55372a634625cd10b2cf353.png" width="293" height="160" alt="SOverlay">
+                        </div>
+                        <h3 class="portfolio-item-title">SOverlay</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>Use the full power of the steam overlay.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>Free</span></li>
+                                 <li>Created/updated: <span>7/01/2022</span></li>
+                                 <li>Category: <span>Code plugins</span></li>
+                                 <li>Version: <span>1.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/cc7ed32bbc164220b5bda680b9843745" target="_blank">unrealengine.com</a></span> and
+                                    <span><a href="https://github.com/MrKuBu/SOverlay" target="_blank">github.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/ProgressiveUILoadingstyles_featured-894x488-9dcc7baed211c3355061cd618c965853.png" width="293" height="160" alt="ProgressiveUI - Loading styles">
+                        </div>
+                        <h3 class="portfolio-item-title">ProgressiveUI - Loading styles</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>Use ready-made loading templates for your game.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>4.99$</span></li>
+                                 <li>Created/updated: <span>8/15/2022</span></li>
+                                 <li>Category: <span>Blueprints</span></li>
+                                 <li>Version: <span>1.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/221326ee82044315bec42aef7e819b7b" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/ProgressiveUIProgressbarcircle_featured-894x488-fd9c99ac987165d357b3b94687f28315.png" width="293" height="160" alt="Progressive UI - Progressbar circleb">
+                        </div>
+                        <h3 class="portfolio-item-title">Progressive UI - Progressbar circle</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>This system for use circle progressbar and customize.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>4.99$</span></li>
+                                 <li>Created/updated: <span>5/04/2022</span></li>
+                                 <li>Category: <span>Blueprints</span></li>
+                                 <li>Version: <span>1.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/slug/accae796afe343538f89be05f1b3a402" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/ProgressiveUI_featured-894x488-e71ae58334704815d5321b2e47c5b35f.png" width="293" height="160" alt="ProgressiveUI v2">
+                        </div>
+                        <h3 class="portfolio-item-title">Progressive UI</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>This simple user interface is easy and flexible and you can easily create a new widget|menu|user interface.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>10.99$</span></li>
+                                 <li>Created/updated: <span>4/27/2022</span></li>
+                                 <li>Category: <span>Blueprints</span></li>
+                                 <li>Version: <span>2.0.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/c16c43b2d4ed4ecfa0fe79301c10b051" target="_blank">unrealengine.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://cdn1.epicgames.com/ue/product/Featured/Telegrammessage_featured-894x488-c6291470cfe3b3216c915bdaf270bdae.png" width="293" height="160" alt="Telegram message plugin">
+                        </div>
+                        <h3 class="portfolio-item-title">Telegram message</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>This is a telegram integration for sending messages from the game.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>Free</span></li>
+                                 <li>Created/updated: <span>2/07/2022</span></li>
+                                 <li>Category: <span>Plugin code (Unreal engine)</span></li>
+                                 <li>Version: <span>1.8.0</span></li>
+                                 <li>Links: <span><a href="https://www.unrealengine.com/marketplace/en-US/product/telegram-message" target="_blank">unrealengine.com</a></span> and
+                                    <span><a href="https://github.com/Awesomium-Team/Telegram-message-UE" target="_blank">github.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                     <!-- Portfolio Item Start-->
+                     <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                           <img src="https://github.com/MrKuBu/Discord-UE4/raw/master/status.png" alt="Discord ue4">
+                        </div>
+                        <h3 class="portfolio-item-title">Disocrd integration</h3>
+                        <button type="button" class="btn view-project-btn">View Project</button>
+                        <div class="portfolio-item-details">
+                           <div class="description">
+                              <p>Plugin for integrating Discord Rich Presence in Unreal Engine 4.</p>
+                           </div>
+                           <div class="general-info">
+                              <ul>
+                                 <li>Price: <span>Free</span></li>
+                                 <li>Created/updated: <span>09/11/2020</span></li>
+                                 <li>Category: <span>Plugin code (Unreal engine)</span></li>
+                                 <li>Version: <span>1.3.0</span></li>
+                                 <li>Links: <span><a href="https://github.com/MrKuBu/Discord-UE4" target="_blank">github.com</a></span></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Portfolio Item End-->
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- Main End -->
+      <!-- Portfolio Item Details Popup Start -->
+      <div class="portfolio-popup">
+         <div class="pp-inner">
+            <div class="pp-content">
+               <div class="pp-header">
+                  <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+                  <div class="pp-thumbnail">
+                     <img src="https://cdn1.epicgames.com/ue/product/Featured/Telegrammessage_featured-894x488-c6291470cfe3b3216c915bdaf270bdae.png" alt="Prewiew">
+                  </div>
+                  <h3></h3>
+               </div>
+               <div class="pp-body">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Portfolio Item Details Popup END -->
+      <script src="./files/js/app.js"></script>
+      <script src="./files/js/script.js"></script>
+      <script type="module" src="./files/js/pixi.js"></script>
+   </body>
+</html>
+
