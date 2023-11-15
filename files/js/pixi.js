@@ -1,21 +1,23 @@
 // Copyright 2023 Awesomium team LLC (MrKuBu). All Rights Reserved.
 
-import * as PIXI from "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.4/browser/pixi.min.mjs";
+/*import * as PIXI from "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.4/browser/pixi.min.mjs";
 import { KawaseBlurFilter } from "https://cdn.skypack.dev/@pixi/filter-kawase-blur";
 import SimplexNoise from "https://cdn.skypack.dev/simplex-noise@3.0.0";
+*/
 import hsl from "https://cdn.skypack.dev/hsl-to-hex";
+/*
 import debounce from "https://cdn.skypack.dev/debounce";
-
+*/
 function random(min, max) {
   return Math.random() * (max - min) + min;
 }
-
+/*
 function map(n, start1, end1, start2, end2) {
   return ((n - start1) / (end1 - start1)) * (end2 - start2) + start2;
 }
 
 const simplex = new SimplexNoise();
-
+*/
 class ColorPalette {
   constructor() {
     this.setColors();
@@ -74,7 +76,7 @@ class ColorPalette {
     );
   }
 }
-
+/*
 class Orb {
   constructor(fill = 0x000000) {
     this.bounds = this.setBounds();
@@ -149,6 +151,7 @@ class Orb {
 
     this.graphics.endFill();
   }
+  
 }
 
 const app = new PIXI.Application({
@@ -156,9 +159,9 @@ const app = new PIXI.Application({
   resizeTo: window,
   transparent: true
 });
-
+*/
 const colorPalette = new ColorPalette();
-
+/*
 app.stage.filters = [new KawaseBlurFilter(1, 2, true)];
 
 const orbs = [];
@@ -170,7 +173,7 @@ for (let i = 0; i < 10; i++) {
 
   orbs.push(orb);
 }
-/*
+
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   app.ticker.add(() => {
     orbs.forEach((orb) => {
@@ -184,17 +187,19 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     orb.render();
   });
 }
-*/
 
+*/
 document
   .querySelector(".overlay__btn--colors")
   .addEventListener("click", () => {
     colorPalette.setColors();
     colorPalette.setCustomProperties();
-
+  /*
     orbs.forEach((orb) => {
       orb.fill = colorPalette.randomColor();
+
     });
+  */
 
   document.body.style.background = "linear-gradient("+random(0, 360)+"deg, rgba("+random(30, 220)+","+random(30, 220)+","+random(30, 220)+",1) 0%, rgba("+random(30, 220)+","+random(30, 220)+","+random(30, 220)+",1) 48%, rgba("+random(30, 220)+","+random(30, 220)+","+random(30, 220)+",1) 100%)";
 });
