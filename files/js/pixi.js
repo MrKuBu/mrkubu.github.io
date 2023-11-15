@@ -170,7 +170,7 @@ for (let i = 0; i < 10; i++) {
 
   orbs.push(orb);
 }
-
+/*
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   app.ticker.add(() => {
     orbs.forEach((orb) => {
@@ -184,7 +184,7 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     orb.render();
   });
 }
-
+*/
 
 document
   .querySelector(".overlay__btn--colors")
