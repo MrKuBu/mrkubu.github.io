@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>YouTube audio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+  </head>
+  <body>
+    <!--Inputs-->
+    <input type="text" id="youtubelink">
+    <button id="Convert">Convert</button>
+    <!--Player-->
+    <audio id="audio" autoplay="" controls="" style="margin-top: 30px; display: none;"></audio>
+    <!--Script-->
+    <script>
+      $.getScript("https://mrkubu.github.io/file/js/lib/ytmp3.js", function(){
+        $("#Convert").click(function(){
+          $("#audio").css("display", "block");
+          var youtubelink = $('#youtubelink').val();
+          var audio_tag = $('#audio')[0];
+          converter(youtubelink, audio_tag);
+        });
+      });
+    </script>
+  </body>
+</html>
