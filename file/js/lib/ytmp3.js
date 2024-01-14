@@ -1,4 +1,4 @@
-function converter(youtubelink, audio_tag){
+function converter(youtubelink, audio_tag, input){
     fetch("https://images" + ~~(Math.random() * 33) + "-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=" + encodeURIComponent(youtubelink)).then(response => {
       if (response.ok){
         var audio_streams = {};
@@ -61,7 +61,8 @@ function converter(youtubelink, audio_tag){
           });
   
           console.log(audio_streams);
-  
+          input.value = audio_streams['256kbps'] || audio_streams['128kbps'] || audio_streams['48kbps'];
+            
           audio_tag.src = audio_streams['256kbps'] || audio_streams['128kbps'] || audio_streams['48kbps'];
           audio_tag.play();
         })
