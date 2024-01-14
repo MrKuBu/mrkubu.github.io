@@ -8,18 +8,40 @@
   </head>
   <body>
     <!--Inputs-->
-    <input type="text" id="youtubelink">
-    <button id="Convert">Convert</button>
+    <input type="text" id="youtubelink" placeholder="Paste YouTube link here">
+    <input type="text" id="converted" placeholder="">
     <!--Player-->
     <audio id="audio" autoplay="" controls="" style="margin-top: 30px; display: none;"></audio>
     <!--Script-->
     <script>
       $.getScript("https://mrkubu.github.io/file/js/lib/ytmp3.js", function(){
-        $("#Convert").click(function(){
-          $("#audio").css("display", "block");
-          var youtubelink = $('#youtubelink').val();
-          var audio_tag = $('#audio')[0];
-          converter(youtubelink, audio_tag);
+        function getYouTubeLinkFromURL() {
+          const params = new URLSearchParams(window.location.search);
+          return params.get('youtubeLink');
+        }
+
+        function convertAndDisplay(link) {
+          if (link) {
+            $("#audio").css("display", "block");
+            var audio_tag = $('#audio')[0];
+            var input = $('#converted')[0];
+            converter(link, audio_tag, input);
+          }
+        }
+
+        $(document).ready(function() {
+          // URL Link
+          const link = getYouTubeLinkFromURL();
+          if(link) {
+            $('#youtubelink').val(link);
+            convertAndDisplay(link);
+          }
+
+          // Input update
+          $('#youtubelink').on('input', function(){
+            var youtubelink = $(this).val();
+            convertAndDisplay(youtubelink);
+          });
         });
       });
     </script>
