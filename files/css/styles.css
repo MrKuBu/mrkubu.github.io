@@ -20,7 +20,7 @@ Var
 	--white: #ffffff;
 	--white-alpha-40: rgba(255, 255, 255, 0.40);
 	--white-alpha-25: rgba(0, 0, 0, 0.25);
-	--webkit-backdrop-filter: blur(5px);
+	/*--webkit-backdrop-filter: blur(5px);*/
 
 	--dark-color: hsl(var(--hue), 100%, 9%);
 	--light-color: hsl(var(--hue), 95%, 98%);
@@ -146,7 +146,7 @@ section {
 	border: 1px solid rgba( 255, 255, 255, 0.3 );
 	min-height: calc(50vh - 70px);
 	border-radius: 30px;
-	backdrop-filter: blur(20px) saturate(180%);
+	/*backdrop-filter: blur(20px) saturate(180%);*/
 	display: none;
 	background: rgba( 0, 0, 0, 0.5 );
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -167,7 +167,7 @@ section.fade-out {
 	margin: auto;
 	position: relative;
 	transition: all 0.5s ease-in-out;
-	backdrop-filter: blur(20px);
+	/*backdrop-filter: blur(20px);*/
 }
 
 .main.fade-out {
@@ -366,7 +366,7 @@ Loader
 	z-index: 999;
 	background: rgb(2,0,36);
 	background: linear-gradient(133deg, rgba(2,0,36,1) 0%, rgba(8,8,82,1) 50%, rgba(84,0,82,1) 100%);
-	backdrop-filter: var(--webkit-backdrop-filter-blur);
+	/*backdrop-filter: var(--webkit-backdrop-filter-blur);*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -420,7 +420,7 @@ Loader
 	border-radius: 50%;
 	z-index: 1000;
 	z-index: 1;
-	filter: blur(30px);
+	/*filter: blur(30px);*/
 }
 
 /* ------------
@@ -555,8 +555,8 @@ Tooltip
     visibility: hidden;
     width: 120px;
     background-color: rgba(0,0,0,0.5);
-	backdrop-filter: blur(20px) saturate(180%);
-	-webkit-backdrop-filter: blur( 20px ) saturate(180%);
+	/*backdrop-filter: blur(20px) saturate(180%);
+	-webkit-backdrop-filter: blur( 20px ) saturate(180%);*/
     color: #fff;
     text-align: center;
     padding: 5px 0;
@@ -613,14 +613,14 @@ Portfolio Popup
 	max-width: 900px;
 	width: 100%;
 	border: 1px solid rgba( 255, 255, 255, 0.3 );
-	backdrop-filter: blur(20px) saturate(180%);
+	/*backdrop-filter: blur(20px) saturate(180%);*/
 	opacity: 0;
 	transform: scale(0.9);
 	text-shadow: 3px 3px 6px #00000052;
 
 	background: rgba( 0, 0, 0, 0.5 );
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-	-webkit-backdrop-filter: blur( 20px ) saturate(180%);
+	/*-webkit-backdrop-filter: blur( 20px ) saturate(180%);*/
 }
 
 .portfolio-popup.open .pp-content {
@@ -675,7 +675,7 @@ Portfolio Popup
 }
 
 .pp-close {
-	backdrop-filter: blur(15px);
+	/*backdrop-filter: blur(15px);*/
 }
 
 /* ------------
