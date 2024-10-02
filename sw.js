@@ -29,7 +29,8 @@ const staticAssets = [
     './files/js/mrkubu_app.js',
     './files/js/pixi.js',
     './files/js/script.js',
-    './files/img/mrkubu.webp'
+    './files/img/mrkubu.webp',
+    './files/img/mrkubu_upd1.web'
 ];
 
 self.addEventListener('install', async event => {
